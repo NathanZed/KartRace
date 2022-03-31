@@ -50,10 +50,12 @@ public class CarController : MonoBehaviour
         {
             rb.AddTorque(-Vector3.up * turnSpeed * 10);
         }
+        
     }
 
     void Fall()
     {
         rb.AddForce(Vector3.down * gravityMultiplier * 10);
     }
+
 }
